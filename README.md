@@ -28,5 +28,15 @@ The War Card Game project originates from Module 1 of the CodeWithChris iOS Foun
 After completing the guided lesson, I recreated the project from memory as a learning exercise to test and reinforce my understanding of the SwiftUI concepts covered.
 
 ## Screenshots
-
-<!-- Add screenshots here -->
+<p>
+  <img
+    src="https://github.com/user-attachments/assets/d36ea715-ed9d-4439-a722-2adefaf383dd"
+    alt="War Card Game initial screen showing both cards face down"
+    width="300"
+  />
+  <img
+    src="https://github.com/user-attachments/assets/133e4e7c-0577-416f-8432-0c81d1ba396b"
+    alt="War Card Game in progress showing dealt cards and updated scores"
+    width="300"
+  />
+</p>
