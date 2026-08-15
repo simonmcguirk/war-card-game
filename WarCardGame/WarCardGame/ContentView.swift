@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var playerCard: String = "back"
+    @State var cpuCard: String = "back"
+    @State var playerScore: Int = 0
+    @State var cpuScore: Int = 0
+    
     var body: some View {
         ZStack {
             Image("background-plain")
@@ -23,16 +29,16 @@ struct ContentView: View {
                 
                 HStack {
                     Spacer()
-                    Image("card2")
+                    Image(playerCard)
                     Spacer()
-                    Image("card3")
+                    Image(cpuCard)
                     Spacer()
                 }
                 
                 Spacer()
                 
                 Button {
-                    print("deal")
+                    deal()
                 } label: {
                     Image("button")
                 }
@@ -46,7 +52,7 @@ struct ContentView: View {
                         Text("Player")
                             .font(.headline)
                             .padding(.bottom, 10)
-                        Text("0")
+                        Text(String(playerScore))
                             .font(.largeTitle)
                     }
                     
@@ -56,7 +62,7 @@ struct ContentView: View {
                         Text("CPU")
                             .font(.headline)
                             .padding(.bottom, 10)
-                        Text("0")
+                        Text(String(cpuScore))
                             .font(.largeTitle)
                     }
                     
@@ -66,6 +72,20 @@ struct ContentView: View {
                 
                 Spacer()
             }
+        }
+    }
+    
+    func deal() {
+        let playerCardValue = Int.random(in: 2...14)
+        let cpuCardValue = Int.random(in: 2...14)
+        
+        playerCard = "card\(playerCardValue)"
+        cpuCard = "card\(cpuCardValue)"
+        
+        if playerCardValue > cpuCardValue {
+            playerScore += 1
+        } else if cpuCardValue > playerCardValue {
+            cpuScore += 1
         }
     }
 }
