@@ -30,12 +30,12 @@ After completing the guided lesson, I recreated the project from memory as a lea
 ## Screenshots
 <p>
   <img
-    src="https://github.com/user-attachments/assets/d36ea715-ed9d-4439-a722-2adefaf383dd"
+    src="https://github.com/user-attachments/assets/b2793c31-1c0d-4d6c-934a-5f7276265f49"
     alt="War Card Game initial screen showing both cards face down"
     width="300"
   />
   <img
-    src="https://github.com/user-attachments/assets/133e4e7c-0577-416f-8432-0c81d1ba396b"
+    src="https://github.com/user-attachments/assets/3a8ac345-4da7-4906-8998-e54e48fdab69"
     alt="War Card Game in progress showing dealt cards and updated scores"
     width="300"
   />
